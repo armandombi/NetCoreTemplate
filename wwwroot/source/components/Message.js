@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import Navbar from './Navbar';
 export default class Message extends React.Component {
 constructor(props) {
       super(props);
@@ -10,9 +11,11 @@ constructor(props) {
       this.setState({message: event.target.value});
    }
    render() {
-      return <div>
-      <h3>Message: {this.state.message}</h3>
-      <span className="text-primary">Enter message:</span> <input type="text" value={this.state.message} onChange={this.handleChange} />
-      </div>;
+      return( 
+      <div>
+            <Navbar />
+            <h3>Message: {this.state.message}</h3>
+            <span className="text-primary">Enter message:</span> <input type="text" value={this.state.message} onChange={this.handleChange} />
+      </div>);
    }
 }

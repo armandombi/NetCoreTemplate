@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Message from './message';
+import Message from './components/Message';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 ReactDOM.render(
