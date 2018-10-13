@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TflExplorer.csproj"
+                "${workspaceFolder}/NetCoreTemplate.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
